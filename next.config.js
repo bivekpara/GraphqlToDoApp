@@ -9,9 +9,9 @@ module.exports = {
     AUTH0_CLIENT_SECRET: process.env.AUTH0_CLIENT_SECRET,
     AUTH0_SCOPE: 'openid profile',
     REDIRECT_URI:
-      process.env.REDIRECT_URI || 'http://localhost:3000/api/callback',
+      process.env.REDIRECT_URI || 'https://graphql-todo-app-next.vercel.app/api/callback',
     POST_LOGOUT_REDIRECT_URI:
-      process.env.POST_LOGOUT_REDIRECT_URI || 'http://localhost:3000/',
+      process.env.POST_LOGOUT_REDIRECT_URI || 'https://graphql-todo-app-next.vercel.app/',
     SESSION_COOKIE_SECRET: process.env.SESSION_COOKIE_SECRET,
     SESSION_COOKIE_LIFETIME: 7200, // 2 hours
     APP_HOST: process.env.DOMAIN,
